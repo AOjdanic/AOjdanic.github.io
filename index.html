@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./password.css" />
-    <script defer src="./password.js"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/bitshow.js"></script>
+    <link rel="stylesheet" href="./css/bitshow.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Generator</title>
+    <title>Bit Show</title>
   </head>
   <body>
-    <form>
-      <textarea></textarea>
-      <p class="slider_title">Password length:</p>
-      <div class="slider_wrapper">
-        <input type="range" min="4" max="18" value="1" class="slider" />
-        <span class="slider_number">4</span>
-      </div>
-      <label>
-        <input type="checkbox" class="checkbox chk_num" />Include numbers</label
-      >
-      <label>
-        <input type="checkbox" class="checkbox chk_lower" />Include lowercase
-        letters</label
-      >
-      <label>
-        <input type="checkbox" class="checkbox chk_upper" />Include Uppercase
-        Letters</label
-      >
-      <label>
-        <input type="checkbox" class="checkbox chk_sym" />Include Symbols</label
-      >
-      <div class="parent_div">
-        <div class="strength_div"><p>STRENGTH:</p></div>
-        <div class="four_divs">
-          <p class="strength_name"></p>
-          <div class="first"></div>
-          <div class="second"></div>
-          <div class="third"></div>
-          <div class="fourth"></div>
+    <nav class="navbar navbar-dark bg-dark justify-content-around">
+      <h1 class="logo">BitShow</h1>
+      <input
+        class="form-control search-suggest mr-sm-2 search"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <div class="search__suggestions hidden"></div>
+    </nav>
+    <main>
+      <h1 class="title">Popular Shows</h1>
+      <section class="container"></section>
+      <section class="col single_show_placeholder hidden">
+        <div class="row">
+          <div class="col picture_placeholder"></div>
+          <div class="col">
+            <div class="row seasons_placeholder">
+              <h2 class="seasons">Seasons</h2>
+              <ul class="season_list"></ul>
+            </div>
+            <div class="row cast_placeholder">
+              <h2>Cast</h2>
+              <ul class="cast_list"></ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <input type="submit" value="GENERATE" class="button" />
-    </form>
+        <div class="row description_placeholder">
+          <h2>Show description</h2>
+          <p class="description"></p>
+        </div>
+      </section>
+    </main>
+    <footer><p>Copyright @ BitStudent 2023</p></footer>
   </body>
 </html>
