@@ -6,8 +6,9 @@
   padding-top: 30px;
   padding-bottom: 50px;
   .card {
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     cursor: pointer;
     .card-title {
       color: blue;
