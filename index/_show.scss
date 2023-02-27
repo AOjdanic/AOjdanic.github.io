@@ -1,4 +1,6 @@
 .single_show_placeholder {
+  animation-name: moveInFromBottom;
+  animation-duration: 2s;
   width: 60%;
   margin: 100px auto;
   margin-top: 20px;
@@ -63,4 +65,16 @@
 
 ul::-webkit-scrollbar {
   visibility: hidden;
+}
+
+@keyframes moveInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
