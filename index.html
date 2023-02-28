@@ -25,8 +25,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="./index (2)/bitshow.js"></script>
-    <link rel="stylesheet" href="./index/bitshow.css" />
+    <script type="module" src="./js/bitshow.js"></script>
+    <link rel="stylesheet" href="./css/bitshow.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,32 +35,30 @@
   <body>
     <nav class="navbar navbar-dark bg-dark justify-content-around">
       <h1 class="logo">BitShow</h1>
-      <input
-        class="form-control search-suggest mr-sm-2 search"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <div class="search__suggestions hidden"></div>
+      <div class="wrap">
+        <input
+          class="form-control search-suggest mr-sm-2 search"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <div class="search__suggestions hidden"></div>
+      </div>
     </nav>
     <main>
       <h1 class="title">Popular Shows</h1>
       <section class="container"></section>
-      <section class="col single_show_placeholder hidden">
-        <div class="row">
-          <div class="col picture_placeholder"></div>
-          <div class="col">
-            <div class="row seasons_placeholder">
-              <h2 class="seasons">Seasons</h2>
-              <ul class="season_list"></ul>
-            </div>
-            <div class="row cast_placeholder">
-              <h2>Cast</h2>
-              <ul class="cast_list"></ul>
-            </div>
-          </div>
+      <section class="single_show_placeholder hidden">
+        <div class="picture_placeholder"></div>
+        <div class="seasons_placeholder">
+          <h2 class="seasons">Seasons</h2>
+          <ul class="season_list"></ul>
         </div>
-        <div class="row description_placeholder">
+        <div class="cast_placeholder">
+          <h2>Cast</h2>
+          <ul class="cast_list"></ul>
+        </div>
+        <div class="description_placeholder">
           <h2>Show description</h2>
           <p class="description"></p>
         </div>
