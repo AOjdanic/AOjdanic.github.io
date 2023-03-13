@@ -287,3 +287,22 @@ footer p {
 }
 
 /*# sourceMappingURL=bitshow.css.map */
+
+.rick-link:link,
+.rick-link:visited {
+  position: absolute;
+  top: 10rem;
+  left: 1rem;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 11px;
+  font-weight: 700;
+  background-color: #212529;
+  border-style: none;
+  color: #fff;
+}
+
+.rick-link:hover,
+.rick-link:active {
+  text-decoration: none;
+}
