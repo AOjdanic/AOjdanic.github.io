@@ -17,11 +17,13 @@ export const displayMovie = function (obj) {
   <div data-id="${
     obj?.show?.externals?.thetvdb ?? obj?.externals?.thetvdb
   }" data-src="${obj?.show?.id ?? obj?.id}" class="card" style="width: 18rem;">
+  <article>
         <img class="card-img-top" src="${
           obj?.show?.image?.medium ??
           obj?.image?.medium ??
           "https://t4.ftcdn.net/jpg/04/00/24/31/360_F_400243185_BOxON3h9avMUX10RsDkt3pJ8iQx72kS3.jpg"
         }" alt="Card image cap">
+        </article>
     <div class="card-body">
         <h5 class="card-title">${obj?.show?.name ?? obj?.name}</h5>
     </div>
@@ -34,10 +36,10 @@ export const displaySearchSuggestions = function (movie) {
     <div data-id="${
       movie?.show?.externals?.thetvdb ?? movie?.externals?.thetvdb
     }" data-src="${movie?.show?.id ?? movie?.id}" class="flex">
-  <img src="${
-    movie.show?.image?.medium ??
-    "https://t4.ftcdn.net/jpg/04/00/24/31/360_F_400243185_BOxON3h9avMUX10RsDkt3pJ8iQx72kS3.jpg"
-  }" >
+        <img src="${
+          movie.show?.image?.medium ??
+          "https://t4.ftcdn.net/jpg/04/00/24/31/360_F_400243185_BOxON3h9avMUX10RsDkt3pJ8iQx72kS3.jpg"
+        }" >
   <span>${movie.show.name}</span></div>
   `;
   suggestions.insertAdjacentHTML("beforeend", html);
